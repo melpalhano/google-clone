@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="./assets/img/logo.png" type="image/x-icon" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <title>Made by Melissa</title>
+  <meta name="descricao"
+    content="Pesquise as informações do mundo, incluindo páginas da web, imagens, vídeos e muito mais. O Google Clone tem muitos recursos especiais para ajudá-lo a encontrar exatamente o que procura." />
+  <meta itemprop="nome" content="Google Clone" />
+  <meta itemprop="descricao"
+    content="Pesquise as informações do mundo, incluindo páginas da web, imagens, vídeos e muito mais. O Google Clone tem muitos recursos especiais para ajudá-lo a encontrar exatamente o que procura." />
+  <meta property="og:url" content="http://google.scidroid.me" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Google Clone" />
+  <meta property="og:descricao"
+    content="Pesquise as informações do mundo, incluindo páginas da web, imagens, vídeos e muito mais. O Google Clone tem muitos recursos especiais para ajudá-lo a encontrar exatamente o que procura." />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Google Clone" />
+  <meta name="twitter:descricao"
+    content="Pesquise as informações do mundo, incluindo páginas da web, imagens, vídeos e muito mais. O Google Clone tem muitos recursos especiais para ajudá-lo a encontrar exatamente o que procura." />
+</head>
+
+
+<body>
+  <header>
+    <nav>
+      <ul id="nav-texts">
+        <li><a href="https://mail.google.com/mail/?authuser=0&ogbl">Gmail</a></li>
+        <li><a href="https://www.google.com.br/imghp?hl=en&authuser=0&ogbl">Imagens</a></li>
+      </ul>
+      <ul id="nav-imgs">
+        <li>
+          <a href="https://workspace.google.com/intl/pt-BR/?utm_source=google&utm_medium=cpc&utm_campaign=latam-BR-all-pt-dr-bkws-all-all-trial-e-dr-1009897-LUAC0011904&utm_content=text-ad-none-any-DEV_c-CRE_471186036169-ADGP_Hybrid+%7C+BKWS+-+EXA+%7C+Txt+~+Google+Workspace-KWID_43700057748921993-kwd-346911454270&utm_term=KW_google%20workspace-ST_google+workspace&--&gclid=Cj0KCQiAy4eNBhCaARIsAFDVtI0JCkGHDHuqx1sedJqIU5Vo37--InyQGaXgItP2nzSA8E-xU37YNf4aAgezEALw_wcB&gclsrc=aw.ds"><img width="16px" height="16px" class="nav-img"
+              src="./assets/img/quadrados.jpeg" alt="menu" /></a>
+        </li>
+        <li>
+          <a href="https://myaccount.google.com/"><img width="32px" height="32px" class="nav-img"
+              src="./assets/img/logo.png" alt="user" /></a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <main>
+    <figure id="banner">
+      <img src="./assets/img/banner.png" alt="google banner" />
+    </figure>
+    <label class="search-box" for="search">
+      <img src="./assets/img/google-search.jpg" alt="search" />
+      <input type="text" name="text" id="search" />
+      <img id="mic-icon" onclick="alert('Isto não funciona;)');" src="./assets/img/google-mic.png
+        " alt="pesquisar com microfone" />
+    </label>
+    <div class="buttons">
+      <button id="searchBtn"
+        onclick="window.open(`https://www.google.com/search?q=${getElementById('search').value}`);">
+        Pesquisa Google
+      </button>
+      <button id="lucky" onclick="alert('Isto não funciona;)');">
+        Estou com sorte
+      </button>
+    </div>
+  </main>
+
+  <footer>
+    <ul id="footer-esquerda">
+      <li><a href="https://about.google/?utm_source=google-BR&utm_medium=referral&utm_campaign=hp-footer&fg=1">Sobre</a>
+      </li>
+      <li><a
+          href="https://ads.google.com/intl/pt-BR_br/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Publicidade</a>
+      </li>
+      <li><a href="https://smallbusiness.withgoogle.com/">Negócios</a></li>
+      <li><a href="https://www.google.com/search/howsearchworks/?fg=1">Como funciona a Pesquisa</a></li>
+    </ul>
+    <ul id="footer-direita">
+      <li><a href="https://policies.google.com/privacy?hl=pt-BR&fg=1">Privacidade</a></li>
+      <li><a href="https://policies.google.com/terms?hl=pt-BR&fg=1">Termos</a></li>
+      <li><a href="">Configurações</a></li>
+    </ul>
+  </footer>
+
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>

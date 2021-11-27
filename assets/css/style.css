@@ -1,0 +1,171 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  margin: 6px;
+  display: flex;
+}
+
+nav {
+  display: flex;
+  margin-left: auto;
+}
+
+ul {
+  display: flex;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: #000000;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+nav img {
+  height: 24px;
+  width: 24px;
+}
+
+#nav-imgs,
+#nav-texts {
+  margin: 10px;
+  margin-left: 10px;
+  display: flex;
+}
+
+#nav-imgs a,
+#nav-texts a {
+  margin-left: 20px;
+  text-align: center;
+}
+
+#nav-texts {
+  padding-top: 4px;
+}
+
+main {
+  margin-top: 20vh;
+}
+
+#banner {
+  display: flex;
+  justify-content: center;
+}
+
+#banner img {
+  min-width: 272px;
+  max-width: 272px;
+  min-height: 92px;
+  max-height: 92px;
+  margin-bottom: 25px;
+  line-height: 92px;
+}
+
+.search-box {
+  display: flex;
+  width: 80vw;
+  max-width: 600px;
+  margin: auto;
+  padding: 9.5px;
+  border-radius: 20px;
+  border: 1px #dadce0 solid;
+}
+
+.search-box input {
+  align-self: stretch;
+  outline: none;
+  border: 0;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 1.6rem;
+  width: 100%;
+}
+
+#mic-icon {
+  margin-left: auto;
+}
+
+.search-box input {
+  border: none;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  border-radius: 5px;
+  border-color: #f8f9fa;
+  background-color: #f8f9fa;
+  color: #000000;
+  font-size: 1.5rem;
+  padding: 10px;
+  margin: 8px;
+}
+
+button:hover {
+  border: #dadce0 solid 2px;
+}
+
+main img {
+  height: 24px;
+}
+
+footer {
+  display: flex;
+  background-color: #f2f2f2;
+  border-top: 0.5px solid #dadce0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+#footer-direita {
+  margin-left: auto;
+}
+
+#footer-esquerda {
+  margin-right: auto;
+}
+
+footer li {
+  margin: 15px;
+}
+
+footer a {
+  color: #6f6f6f;
+}
+
+@media (max-width: 759px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #footer-direita {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  #footer-esquerda {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
