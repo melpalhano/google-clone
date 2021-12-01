@@ -50,23 +50,23 @@
     <figure id="banner">
       <img src="./assets/img/banner.png" alt="google banner" />
     </figure>
-    <label class="search-box" for="search">
-      <img src="./assets/img/google-search.jpg" alt="search" />
-      <input type="text" name="text" id="search" />
-      <img id="mic-icon" onclick="alert('Isto não funciona;)');" src="./assets/img/google-mic.png
-        " alt="pesquisar com microfone" />
-    </label>
-    <div class="buttons">
-      <button id="searchBtn"
-        onclick="window.open(`https://www.google.com/search?q=${getElementById('search').value}`);">
-        Pesquisa Google
-      </button>
-      <button id="lucky" onclick="alert('Isto não funciona;)');">
-        Estou com sorte
-      </button>
+    <form id="f1" action="https://www.google.com/search" method="GET">
+        <label class="search-box" for="search">
+          <img src="./assets/img/google-search.jpg" alt="search" />
+          <input type="text" name="q" id="search" placeholder="Google Search"/>
+          <img id="mic-icon" onclick="alert('Isto não funciona;)');" src="./assets/img/google-mic.png
+            " alt="pesquisar com microfone" />
+        </label>
+        <div class="buttons">
+          <button type="submit" id="searchBtn">
+            Pesquisa Google
+          </button>
+          <button id="lucky" onclick="alert('Isto não funciona;)');">
+            Estou com sorte
+          </button>
+    </form>
     </div>
   </main>
-
   <footer>
     <ul id="footer-esquerda">
       <li><a href="https://about.google/?utm_source=google-BR&utm_medium=referral&utm_campaign=hp-footer&fg=1">Sobre</a>
@@ -84,7 +84,7 @@
     </ul>
   </footer>
 
-  <script src="js/script.js"></script>
+  <script src="assets/js/script.js"></script>
 
 </body>
 
