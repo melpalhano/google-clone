@@ -8,20 +8,16 @@
   <link rel="shortcut icon" href="./assets/img/logo.png" type="image/x-icon" />
   <link rel="stylesheet" href="./assets/css/style.css" />
   <title>Made by Melissa</title>
-  <meta name="descricao"
-    content="Pesquise as informações do mundo, incluindo páginas da web, imagens, vídeos e muito mais. O Google Clone tem muitos recursos especiais para ajudá-lo a encontrar exatamente o que procura." />
+  <meta name="descricao" content="Pesquise as informações do mundo, incluindo páginas da web, imagens, vídeos e muito mais. O Google Clone tem muitos recursos especiais para ajudá-lo a encontrar exatamente o que procura." />
   <meta itemprop="nome" content="Google Clone" />
-  <meta itemprop="descricao"
-    content="Pesquise as informações do mundo, incluindo páginas da web, imagens, vídeos e muito mais. O Google Clone tem muitos recursos especiais para ajudá-lo a encontrar exatamente o que procura." />
+  <meta itemprop="descricao" content="Pesquise as informações do mundo, incluindo páginas da web, imagens, vídeos e muito mais. O Google Clone tem muitos recursos especiais para ajudá-lo a encontrar exatamente o que procura." />
   <meta property="og:url" content="http://google.scidroid.me" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Google Clone" />
-  <meta property="og:descricao"
-    content="Pesquise as informações do mundo, incluindo páginas da web, imagens, vídeos e muito mais. O Google Clone tem muitos recursos especiais para ajudá-lo a encontrar exatamente o que procura." />
+  <meta property="og:descricao" content="Pesquise as informações do mundo, incluindo páginas da web, imagens, vídeos e muito mais. O Google Clone tem muitos recursos especiais para ajudá-lo a encontrar exatamente o que procura." />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Google Clone" />
-  <meta name="twitter:descricao"
-    content="Pesquise as informações do mundo, incluindo páginas da web, imagens, vídeos e muito mais. O Google Clone tem muitos recursos especiais para ajudá-lo a encontrar exatamente o que procura." />
+  <meta name="twitter:descricao" content="Pesquise as informações do mundo, incluindo páginas da web, imagens, vídeos e muito mais. O Google Clone tem muitos recursos especiais para ajudá-lo a encontrar exatamente o que procura." />
 </head>
 
 
@@ -34,12 +30,53 @@
       </ul>
       <ul id="nav-imgs">
         <li>
-          <a href="https://workspace.google.com/intl/pt-BR/?utm_source=google&utm_medium=cpc&utm_campaign=latam-BR-all-pt-dr-bkws-all-all-trial-e-dr-1009897-LUAC0011904&utm_content=text-ad-none-any-DEV_c-CRE_471186036169-ADGP_Hybrid+%7C+BKWS+-+EXA+%7C+Txt+~+Google+Workspace-KWID_43700057748921993-kwd-346911454270&utm_term=KW_google%20workspace-ST_google+workspace&--&gclid=Cj0KCQiAy4eNBhCaARIsAFDVtI0JCkGHDHuqx1sedJqIU5Vo37--InyQGaXgItP2nzSA8E-xU37YNf4aAgezEALw_wcB&gclsrc=aw.ds"><img width="16px" height="16px" class="nav-img"
-              src="./assets/img/quadrados.jpeg" alt="menu" /></a>
+          <label for="check-menu" id="menu-label"><img class="nav-img" src="./assets/img/menu.png" alt="menu" />
+          </label>
+          <input type="checkbox" id="check-menu">
+          <div id="menu-itens">
+            <div class="item-menu">
+              <a href="https://mail.google.com/mail/?tab=rm&authuser=0">
+                <img src="./assets/img/Menu-itens/gmail.png" alt="Google-Gmail-icon">
+                <span>Gmail</span>
+              </a>
+            </div>
+            <div class="item-menu">
+              <a href="https://drive.google.com/?tab=ro&authuser=0">
+                <img src="./assets/img/Menu-itens/google-drive.png" alt="Google-Drive-icon">
+                <span>Drive</span>
+              </a>
+            </div>
+            <div class="item-menu">
+              <a href="https://maps.google.com.br/maps?hl=pt-BR&tab=rl&authuser=0">
+                <img src="./assets/img/Menu-itens/google-maps.png" alt="Google-Maps-icon">
+                <span>Maps</span>
+              </a>
+            </div>
+            <div class="item-menu">
+              <a href="https://play.google.com/?hl=pt-BR&tab=r8&authuser=0">
+                <img src="./assets/img/Menu-itens/google-play.png" alt="Google-Play-icon">
+                <span>Play</span>
+              </a>
+            </div>
+            <div class="item-menu">
+              <a href="https://www.youtube.com/?gl=BR&tab=r1&authuser=0">
+                <img src="./assets/img/Menu-itens/youtube.png" alt="Google-Youtube-icon">
+                <span>Youtube</span>
+              </a>
+            </div>
+            <div class="item-menu">
+              <a href="https://meet.google.com/?hs=197&pli=1&authuser=0">
+                <img src="./assets/img/Menu-itens/meet.png" alt="Google-Meet-icon">
+                <span>Meet</span>
+              </a>
+            </div>
+            <div class="item-menu" id="more-menu">
+              <a href="https://www.google.com.br/intl/pt-BR/about/products?tab=rh"><span>Mais Do google</span></a>
+            </div>
+          </div>
         </li>
         <li>
-          <a href="https://myaccount.google.com/"><img width="32px" height="32px" class="nav-img"
-              src="./assets/img/logo.png" alt="user" /></a>
+          <a href="https://myaccount.google.com/"><img class="nav-img" src="./assets/img/logo.png" alt="user" /></a>
         </li>
       </ul>
     </nav>
@@ -51,19 +88,19 @@
       <img src="./assets/img/banner.png" alt="google banner" />
     </figure>
     <form id="f1" action="https://www.google.com/search" method="GET">
-        <label class="search-box" for="search">
-          <img src="./assets/img/google-search.jpg" alt="search" />
-          <input type="text" name="q" id="search" placeholder="Google Search"/>
-          <img id="mic-icon" onclick="alert('Isto não funciona;)');" src="./assets/img/google-mic.png
+      <label class="search-box" for="search">
+        <img src="./assets/img/google-search.jpg" alt="search" />
+        <input type="text" name="q" id="search" placeholder="Google Search" />
+        <img id="mic-icon" onclick="alert('Isto não funciona;)');" src="./assets/img/google-mic.png
             " alt="pesquisar com microfone" />
-        </label>
-        <div class="buttons">
-          <button type="submit" id="searchBtn">
-            Pesquisa Google
-          </button>
-          <button id="lucky" onclick="alert('Isto não funciona;)');">
-            Estou com sorte
-          </button>
+      </label>
+      <div class="buttons">
+        <button type="submit" id="searchBtn">
+          Pesquisa Google
+        </button>
+        <button id="lucky" onclick="alert('Isto não funciona;)');">
+          Estou com sorte
+        </button>
     </form>
     </div>
   </main>
@@ -71,8 +108,7 @@
     <ul id="footer-esquerda">
       <li><a href="https://about.google/?utm_source=google-BR&utm_medium=referral&utm_campaign=hp-footer&fg=1">Sobre</a>
       </li>
-      <li><a
-          href="https://ads.google.com/intl/pt-BR_br/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Publicidade</a>
+      <li><a href="https://ads.google.com/intl/pt-BR_br/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Publicidade</a>
       </li>
       <li><a href="https://smallbusiness.withgoogle.com/">Negócios</a></li>
       <li><a href="https://www.google.com/search/howsearchworks/?fg=1">Como funciona a Pesquisa</a></li>
